@@ -37,7 +37,7 @@ pipeline {
             steps {
                 echo 'Preparing deployment engine environment...'
                 sh '''
-                    curl -LO "https://k8s.io"
+                    curl -LO "https://dl.k8s.io"
                     STABLE_VERSION=$(cat stable.txt)
                     curl -LO "https://k8s.io{STABLE_VERSION}/bin/linux/amd64/kubectl"
                     chmod +x kubectl
