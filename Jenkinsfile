@@ -33,20 +33,22 @@ pipeline {
             }
         }
 
-        stage('Rolling Continuous Update') {
+                stage('Rolling Continuous Update') {
             steps {
                 echo 'Preparing deployment engine environment...'
-                // Installs kubectl directly into the running default agent environment
                 sh '''
-                    curl -LO "https://k8s.io(curl -L -s https://k8s.io)/bin/linux/amd64/kubectl"
+                    curl -LO "https://k8s.io"
+                    STABLE_VERSION=$(cat stable.txt)
+                    curl -LO "https://k8s.io{STABLE_VERSION}/bin/linux/amd64/kubectl"
                     chmod +x kubectl
-                    mv kubectl /usr/local/bin/ || mkdir -p ~/.local/bin && mv kubectl ~/.local/bin/kubectl
+                    mkdir -p ~/.local/bin && mv kubectl ~/.local/bin/kubectl
                 '''
                 
                 echo 'Deploying updated codebase to Kubernetes Application Pods...'
                 sh "export PATH=\$PATH:~/.local/bin && kubectl rollout restart deployment/laravel-app -n ${env.NAMESPACE} || echo 'First deployment setup'"
             }
         }
+
 
         stage('Deploy Observability Stack') {
             steps {
