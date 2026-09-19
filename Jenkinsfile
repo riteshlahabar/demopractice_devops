@@ -42,6 +42,36 @@ pipeline {
                 sh "kubectl rollout restart deployment/laravel-app -n ${env.NAMESPACE} || echo 'First deployment setup'"
             }
         }
+
+                stage('Deploy Observability Stack') {
+            steps {
+                container('deployment-runner') {
+                    echo 'Installing Helm CLI inside transient deployment container...'
+                    sh '''
+                        curl -fsSL -o helm.tar.gz https://helm.sh
+                        tar -zxvf helm.tar.gz
+                        mv linux-amd64/helm /usr/local/bin/helm
+                        rm -rf linux-amd64 helm.tar.gz
+                    '''
+                    
+                    echo 'Adding Prometheus Helm Repositories...'
+                    sh '''
+                        helm repo add prometheus-community https://github.io
+                        helm repo update
+                    '''
+                    
+                    echo 'Deploying Prometheus and Grafana via Helm GitOps loop...'
+                    sh '''
+                        helm upgrade --install monitoring prometheus-community/kube-prometheus-stack \
+                          --namespace bawaskar-testing \
+                          --set grafana.adminPassword=admin \
+                          --rollback-on-failure \
+                          --timeout 7m
+                    '''
+                }
+            }
+        }
+
     }
 
     post {
