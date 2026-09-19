@@ -9,3 +9,9 @@
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
+
+Dockerfile export-ignore
+Jenkinsfile export-ignore
+nginx.conf export-ignore
+supervisord.conf export-ignore
+
