@@ -1,12 +1,12 @@
 pipeline {
     agent {
         kubernetes {
+            // Reverts to your cluster's pre-configured default pod template to stop caching crashes
             inheritFrom 'default'
         }
     }
     
     environment {
-        // Targets the local testing image you built inside Minikube
         APP_IMAGE = 'my-laravel-testing-app:latest'
         NAMESPACE = 'bawaskar-testing'
     }
@@ -22,7 +22,6 @@ pipeline {
         stage('Verify Environment') {
             steps {
                 echo 'Running isolated automated sanity checks...'
-                // Sets up the environment configuration for testing logs
                 sh 'cp .env.example .env'
             }
         }
@@ -30,48 +29,54 @@ pipeline {
         stage('Execute Laravel Tests') {
             steps {
                 echo 'Executing database migrations and PHPUnit test suite...'
-                // Tells Jenkins to verify code logic before allowing deployment
                 sh 'echo "Running tests against bawaskar-db inside the cluster..."'
             }
         }
 
         stage('Rolling Continuous Update') {
             steps {
+                echo 'Preparing deployment engine environment...'
+                // Installs kubectl directly into the running default agent environment
+                sh '''
+                    curl -LO "https://k8s.io(curl -L -s https://k8s.io)/bin/linux/amd64/kubectl"
+                    chmod +x kubectl
+                    mv kubectl /usr/local/bin/ || mkdir -p ~/.local/bin && mv kubectl ~/.local/bin/kubectl
+                '''
+                
                 echo 'Deploying updated codebase to Kubernetes Application Pods...'
-                // Instructs Kubernetes to roll out your changes with Zero-Downtime
-                sh "kubectl rollout restart deployment/laravel-app -n ${env.NAMESPACE} || echo 'First deployment setup'"
+                sh "export PATH=\$PATH:~/.local/bin && kubectl rollout restart deployment/laravel-app -n ${env.NAMESPACE} || echo 'First deployment setup'"
             }
         }
 
-                stage('Deploy Observability Stack') {
+        stage('Deploy Observability Stack') {
             steps {
-                container('deployment-runner') {
-                    echo 'Installing Helm CLI inside transient deployment container...'
-                    sh '''
-                        curl -fsSL -o helm.tar.gz https://helm.sh
-                        tar -zxvf helm.tar.gz
-                        mv linux-amd64/helm /usr/local/bin/helm
-                        rm -rf linux-amd64 helm.tar.gz
-                    '''
-                    
-                    echo 'Adding Prometheus Helm Repositories...'
-                    sh '''
-                        helm repo add prometheus-community https://github.io
-                        helm repo update
-                    '''
-                    
-                    echo 'Deploying Prometheus and Grafana via Helm GitOps loop...'
-                    sh '''
-                        helm upgrade --install monitoring prometheus-community/kube-prometheus-stack \
-                          --namespace bawaskar-testing \
-                          --set grafana.adminPassword=admin \
-                          --rollback-on-failure \
-                          --timeout 7m
-                    '''
-                }
+                echo 'Installing Helm CLI inside default deployment context...'
+                // Installs Helm directly into the running default agent environment
+                sh '''
+                    curl -fsSL -o helm.tar.gz https://helm.sh
+                    tar -zxvf helm.tar.gz
+                    mv linux-amd64/helm /usr/local/bin/helm || mkdir -p ~/.local/bin && mv linux-amd64/helm ~/.local/bin/helm
+                    rm -rf linux-amd64 helm.tar.gz
+                '''
+                
+                echo 'Adding Prometheus Helm Repositories...'
+                sh '''
+                    export PATH=\$PATH:~/.local/bin
+                    helm repo add prometheus-community https://github.io
+                    helm repo update
+                '''
+                
+                echo 'Deploying Prometheus and Grafana via Helm GitOps loop...'
+                sh '''
+                    export PATH=\$PATH:~/.local/bin
+                    helm upgrade --install monitoring prometheus-community/kube-prometheus-stack \
+                      --namespace bawaskar-testing \
+                      --set grafana.adminPassword=admin \
+                      --rollback-on-failure \
+                      --timeout 7m
+                '''
             }
         }
-
     }
 
     post {
