@@ -1,0 +1,2 @@
+product_sku,warehouse_code,warehouse_id,product_id,batch_no,manufacturing_date,expiry_date,purchase_price,quantity,reserved_quantity,low_stock_alert
+PES001,WH001,,,BATCH001,2026-07-05,2027-08-05,350,100,0,10

@@ -1,0 +1,2 @@
+salesman_email,name,email,mobile,dealer_code,firm_name,gst_number,salesman_id,credit_limit,outstanding_balance,status
+salesman@example.com,"Sample Name",sample@example.com,9876543210,DLR001,"Sample Agro Center",27ABCDE1234F1Z5,1,50000,0,active

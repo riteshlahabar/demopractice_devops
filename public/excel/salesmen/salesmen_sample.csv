@@ -1,0 +1,2 @@
+name,email,mobile,password,employee_code,joining_date,territory,basic_salary,target_amount,status
+"Sample Name",sample@example.com,9876543210,123456,EMP001,2026-08-05,Nagpur,25000,100000,active

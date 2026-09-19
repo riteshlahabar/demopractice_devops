@@ -1,0 +1,2 @@
+order_id,payer_id,collected_by,payment_no,payment_mode,amount,transaction_ref,status,paid_at
+,,,,cash,500,,active,

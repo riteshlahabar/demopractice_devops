@@ -1,0 +1,5 @@
+*
+!.gitignore
+!storefront/
+!storefront/index-5/
+!storefront/index-5/**

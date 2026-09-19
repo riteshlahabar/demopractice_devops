@@ -1,0 +1,2 @@
+category_code,subcategory_code,expense_no,expense_date,category_id,subcategory_id,title,vendor_name,payment_mode,taxable_amount,gst_amount,total_amount,paid_by,status,receipt_path,notes
+OFFICE,STATIONERY,EXP001,2026-08-05,,1,"Premium Pesticides & Fertilizers","Sample Vendor",cash,1000,180,1180,Admin,active,uploads/expenses/receipt.jpg,

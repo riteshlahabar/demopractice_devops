@@ -1,0 +1,729 @@
+.bawaskar-store-logo{display:inline-flex;align-items:center;gap:9px;font-weight:900;font-size:20px;color:#0b5f46;line-height:1.05;white-space:nowrap}.bawaskar-store-logo-img{width:44px;height:44px;object-fit:contain;flex:0 0 44px}.bawaskar-store-logo-text{display:inline-flex;flex-direction:column;gap:2px}.bawaskar-store-logo small{display:block;font-size:10px;font-weight:800;color:#444;letter-spacing:.06em;text-transform:uppercase}.header-3 .bawaskar-store-logo{color:#fff}.header-3 .bawaskar-store-logo-text{color:#fff}.footer-logo .bawaskar-store-logo{color:#0b5f46}.theme-color-3{--theme-color:#0da487;--theme-color-rgb:13,164,135}.btn-animation{background:#0da487}.web-logo{min-width:255px}.logo-login .bawaskar-store-logo{font-size:24px}@media(max-width:575px){.bawaskar-store-logo{font-size:15px;gap:7px}.bawaskar-store-logo-img{width:36px;height:36px;flex-basis:36px}.web-logo{min-width:auto}}
+/* Bawaskar header compact layout */
+.header-3 .navbar-top{display:flex;align-items:center;gap:18px}.header-3 .web-logo{min-width:235px;flex:0 0 235px}.header-3 .middle-box{flex:1 1 auto;min-width:0}.header-3 .middle-box .center-box{display:flex;align-items:center;justify-content:flex-start;gap:14px;width:100%}.header-3 .location-box-2{flex:0 0 auto}.header-3 .location-button{height:42px;min-width:132px;padding:0 14px;display:inline-flex;align-items:center;justify-content:center;gap:7px;border-radius:6px;white-space:nowrap}.header-3 .location-button span{font-size:14px;font-weight:600}.header-3 .location-button .icli{font-size:18px}.header-3 .location-button .down-arrow{font-size:12px;margin-left:2px}.header-3 .searchbar-box-2{flex:0 1 430px;width:430px;max-width:34vw;min-width:300px}.header-3 .searchbar-box-2 .form-control{height:42px;font-size:14px}.header-3 .searchbar-box-2 .search-icon,.header-3 .searchbar-box-2 .search-button{height:42px}.header-3 .searchbar-box-2 .search-button{padding:0 18px;font-size:14px;font-weight:700}.header-3 .support-sidemenu{margin-left:auto;flex:0 0 auto}.header-3 .support-box{display:flex;align-items:center;gap:10px;padding-left:8px;min-width:168px}.header-3 .support-image{width:34px;height:34px;flex:0 0 34px;display:flex;align-items:center;justify-content:center}.header-3 .support-number h2{font-size:15px;line-height:1.15;margin:0;font-weight:800;white-space:nowrap}.header-3 .support-number h4{font-size:11px;line-height:1.15;margin:3px 0 0;color:#667085;font-weight:700;white-space:nowrap}@media(max-width:1399px){.header-3 .web-logo{min-width:220px;flex-basis:220px}.header-3 .searchbar-box-2{width:360px;max-width:31vw;min-width:270px}.header-3 .support-box{min-width:150px}.header-3 .support-number h2{font-size:14px}.header-3 .support-number h4{font-size:10px}}@media(max-width:1199px){.header-3 .navbar-top{gap:12px}.header-3 .web-logo{min-width:0;flex:0 0 auto}.header-3 .support-sidemenu{display:none}.header-3 .middle-box{display:none}}@media(max-width:575px){.header-3 .navbar-top{gap:9px}.header-3 .web-logo{max-width:210px}.bawaskar-store-logo-text{max-width:150px}}
+/* Bawaskar header logo/search fix */
+.header-3 .navbar-top .web-logo{flex:0 0 260px;min-width:260px}.header-3 .navbar-top .web-logo .bawaskar-store-logo-img{width:72px!important;height:72px!important;max-width:72px!important;min-width:72px!important;object-fit:contain!important;flex:0 0 72px!important}.header-3 .bawaskar-store-logo{gap:8px;font-size:18px}.header-3 .bawaskar-store-logo small{font-size:9px}.header-3 .searchbar-box-2{display:flex!important;align-items:stretch;overflow:hidden}.header-3 .searchbar-box-2 .search-icon{flex:0 0 46px;width:46px;padding:0;display:flex;align-items:center;justify-content:center}.header-3 .searchbar-box-2 .form-control{min-width:0;flex:1 1 auto;padding-left:12px;padding-right:12px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.header-3 .searchbar-box-2 .search-button{flex:0 0 82px;width:82px;padding:0 12px}.header-3 .support-number h2,.header-3 .support-number h4{color:#fff}@media(max-width:1399px){.header-3 .navbar-top .web-logo{flex-basis:240px;min-width:240px}.header-3 .navbar-top .web-logo .bawaskar-store-logo-img{width:64px!important;height:64px!important;max-width:64px!important;min-width:64px!important;flex-basis:64px!important}.header-3 .bawaskar-store-logo{font-size:17px}.header-3 .searchbar-box-2{width:340px;min-width:300px}}@media(max-width:575px){.header-3 .navbar-top .web-logo .bawaskar-store-logo-img{width:42px!important;height:42px!important;max-width:42px!important;min-width:42px!important;flex-basis:42px!important}}
+/* Bawaskar search row hard fix */
+.header-3 .searchbar-box-2.input-group{height:42px!important;max-height:42px!important;flex-wrap:nowrap!important;align-items:stretch!important;overflow:hidden!important;border-radius:5px}.header-3 .searchbar-box-2.input-group>.btn,.header-3 .searchbar-box-2.input-group>.form-control{height:42px!important;min-height:42px!important;max-height:42px!important;margin:0!important;border:0!important;box-shadow:none!important;line-height:42px!important}.header-3 .searchbar-box-2.input-group>.form-control{padding-top:0!important;padding-bottom:0!important;display:block!important;flex:1 1 auto!important;width:1%!important;min-width:0!important}.header-3 .searchbar-box-2.input-group>.search-icon{border-radius:5px 0 0 5px!important}.header-3 .searchbar-box-2.input-group>.search-button{border-radius:0 5px 5px 0!important;line-height:1!important}.header-3 .searchbar-box-2.input-group .iconly-Search{line-height:1!important}
+/* Keep plain navbar links free from Fastkart dropdown arrows. */
+.navbar-nav .nav-link.no-dropdown-arrow::after,
+.navbar-nav .nav-link.no-dropdown-arrow::before {
+    display: none !important;
+    content: none !important;
+}
+/* Keep the nav menu and right-side header icons separated cleanly. */
+.header-3 .nav-left-align {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 18px !important;
+}
+
+.header-3 .nav-left-align .navbar {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+}
+
+.header-3 .nav-left-align > .rightside-menu,
+.header-3 .nav-left-align > .header-nav-right {
+    flex: 0 0 auto !important;
+    margin-left: 18px !important;
+}
+
+.header-3 .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0 !important;
+}
+
+.header-3 .navbar-nav .nav-link.no-dropdown-arrow {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    padding-right: 0 !important;
+}
+/* Storefront language selector beside the product search. */
+.header-3 .language-box-2 {
+    flex: 0 0 auto;
+    height: 42px;
+    align-items: center;
+}
+
+.header-3 .language-button {
+    height: 42px;
+    min-width: 118px;
+    padding: 0 12px;
+    border: 0;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, .18);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.header-3 .language-button::after {
+    margin-left: 2px;
+}
+
+.header-3 .language-button:hover,
+.header-3 .language-button:focus {
+    background: rgba(255, 255, 255, .26);
+    color: #fff;
+    box-shadow: none;
+}
+
+.header-3 .language-dropdown {
+    min-width: 190px;
+    padding: 8px;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .14);
+}
+
+.header-3 .language-dropdown li {
+    display: block;
+    width: 100%;
+}
+
+.header-3 .language-dropdown .dropdown-item {
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px 10px;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.header-3 .language-dropdown .dropdown-item small {
+    color: #7a8494;
+    font-size: 12px;
+}
+
+.header-3 .language-dropdown .dropdown-item.active,
+.header-3 .language-dropdown .dropdown-item:active {
+    background: var(--theme-color);
+    color: #fff;
+}
+
+.header-3 .language-dropdown .dropdown-item.active small,
+.header-3 .language-dropdown .dropdown-item:active small {
+    color: rgba(255, 255, 255, .8);
+}
+
+@media (max-width: 1399px) {
+    .header-3 .searchbar-box-2 {
+        width: 310px;
+        min-width: 260px;
+    }
+
+    .header-3 .language-button {
+        min-width: 108px;
+        padding: 0 10px;
+        font-size: 13px;
+    }
+}
+
+/* Keep hero main banner height same even when title/subtitle/description are blank */
+.home-section-2 .home-contain {
+    height: calc(100vw * 637 / 1920) !important;
+    min-height: 360px !important;
+    max-height: 637px !important;
+}
+
+.home-section-2 .home-contain > img,
+.home-section-2 .home-contain .bg-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.home-section-2 .home-contain .home-detail {
+    height: 100% !important;
+}
+
+
+/* Move hero text and Shop Now button together at bottom */
+.home-section-2 .home-contain {
+    position: relative !important;
+}
+
+.home-section-2 .home-contain .home-detail {
+    position: absolute !important;
+    top: 0 !important;
+    left: 8% !important;
+    height: 100% !important;
+    max-width: 520px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    align-items: flex-start !important;
+    padding-bottom: 45px !important;
+}
+
+.home-section-2 .home-contain .home-detail .btn {
+    position: static !important;
+    bottom: auto !important;
+    left: auto !important;
+    margin-top: 14px !important;
+}
+
+/* Tighten storefront product-card spacing to match Fastkart card rhythm */
+.product-box-4 .product-detail {
+    margin-top: 12px;
+}
+
+.product-box-4 .product-detail .rating {
+    margin-bottom: 4px;
+}
+
+.product-box-4 .product-detail a .name {
+    margin-bottom: 4px;
+    line-height: 1.35;
+}
+
+.product-box-4 .product-detail .price-box-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-top: 0;
+}
+
+.product-box-4 .product-detail .price-box-4 h6,
+.product-box-4 .product-detail .price-box-4 h5,
+.product-box-4 .product-detail .price-box-4 del {
+    margin: 0 !important;
+    line-height: 1.2;
+}
+
+.product-box-4 .product-detail .price-qty {
+    margin-top: 6px !important;
+    align-items: flex-start !important;
+}
+
+.product-box-4 .product-detail .price-qty > h5 {
+    margin-bottom: 0 !important;
+    line-height: 1.35;
+}
+
+.product-box-4 .product-detail .label-tag {
+    margin-top: 6px !important;
+}
+
+/* Align cut price and real price to the same left edge, and tighten the text stack */
+.product-box-4 .product-detail .price-box-4 {
+    align-items: flex-start !important;
+    text-align: left !important;
+}
+
+.product-box-4 .product-detail .price-box-4 h6,
+.product-box-4 .product-detail .price-box-4 h5 {
+    width: 100%;
+    text-align: left !important;
+    padding: 0 !important;
+}
+
+.product-box-4 .product-detail .price-box-4 del,
+.product-box-4 .product-detail .price-box-4 .price {
+    display: block;
+    text-align: left !important;
+    margin: 0 !important;
+}
+
+.product-box-4 .product-detail .price-box-4 + .price-qty {
+    margin-top: 3px !important;
+}
+
+.product-box-4 .product-detail .price-qty > h5.text-content {
+    margin-top: 0 !important;
+    line-height: 1.25 !important;
+}
+
+.product-box-4 .product-detail .price-qty form,
+.product-box-4 .product-detail .price-qty .add-button {
+    margin-top: 0 !important;
+}
+
+
+.store-wishlist-toggle.active i,
+.store-wishlist-toggle.is-active i,
+.store-wishlist-toggle.active svg,
+.store-wishlist-toggle.is-active svg {
+    color: var(--theme-color);
+    stroke: var(--theme-color);
+}
+
+.store-wishlist-toggle.is-loading {
+    pointer-events: none;
+    opacity: 0.65;
+}
+
+.store-wishlist-count {
+    background-color: var(--theme-color);
+    color: #fff;
+    min-width: 18px;
+    min-height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+/* Fill product images inside storefront cards */
+.product-box-4 .product-image.product-image-2 {
+    width: calc(100% + 32px);
+    height: 190px;
+    margin: -16px -16px 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 7px 7px 0 0;
+    background-color: #f8f8f8;
+}
+
+.product-box-4 .product-image.product-image-2 > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.product-box-4 .product-image.product-image-2 img {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    margin: 0 !important;
+    object-fit: cover !important;
+    object-position: center;
+    transform: scale(1.08);
+}
+
+/* Match inner page header logo size with home page header */
+.top-header .navbar-top .web-logo{flex:0 0 260px;min-width:260px}.top-header .navbar-top .web-logo .bawaskar-store-logo-img{width:72px!important;height:72px!important;max-width:72px!important;min-width:72px!important;object-fit:contain!important;flex:0 0 72px!important}.top-header .bawaskar-store-logo{gap:8px;font-size:18px}.top-header .bawaskar-store-logo small{font-size:9px}@media(max-width:1399px){.top-header .navbar-top .web-logo{flex-basis:240px;min-width:240px}.top-header .navbar-top .web-logo .bawaskar-store-logo-img{width:64px!important;height:64px!important;max-width:64px!important;min-width:64px!important;flex-basis:64px!important}.top-header .bawaskar-store-logo{font-size:17px}}@media(max-width:575px){.top-header .navbar-top .web-logo{min-width:0;flex:0 0 auto;max-width:210px}.top-header .navbar-top .web-logo .bawaskar-store-logo-img{width:42px!important;height:42px!important;max-width:42px!important;min-width:42px!important;flex-basis:42px!important}}
+/* Checkout validation and order success polish */
+.store-checkout-error-alert{border-radius:12px;padding:16px 18px}.store-checkout-error-alert h5{font-size:18px;margin:0}.store-checkout-error-list{padding-left:18px;display:grid;gap:4px}.store-checkout-field-error{font-size:13px;font-weight:500;margin-top:6px}.store-order-success-hero{margin-bottom:12px}.store-order-success-card{background:#fff;border:1px solid #ececec;border-radius:16px;padding:28px;box-shadow:0 12px 30px rgba(34,34,34,.06)}.store-order-success-message{max-width:640px;margin-left:auto;margin-right:auto;line-height:1.7}.store-order-hero-meta{display:flex;flex-wrap:wrap;gap:20px 30px}.store-order-hero-meta span{display:block;font-size:13px;color:#7e7e7e;margin-bottom:4px}.store-order-hero-meta strong{font-size:16px;color:#222}.store-order-status-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}.store-order-hero-actions{display:flex;flex-wrap:wrap;gap:12px}.store-order-pill{display:inline-flex;align-items:center;justify-content:center;padding:7px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase}.store-order-pill.is-success{background:rgba(13,164,135,.12);color:#0da487}.store-order-pill.is-warning{background:rgba(255,179,33,.16);color:#a66900}.store-order-pill.is-danger{background:rgba(255,114,114,.14);color:#d64545}@media(max-width:575px){.store-order-hero-actions{flex-direction:column}.store-order-hero-actions .btn{width:100%}.store-order-hero-meta{display:grid;gap:12px;justify-content:center}}
+/* Storefront order tracking live data */
+.store-tracking-selector .summery-header {
+    align-items: center;
+}
+
+.store-tracking-note {
+    color: #4a5568;
+    font-size: 14px;
+    margin-top: 14px;
+}
+
+.store-tracking-empty {
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.store-order-inline-link {
+    color: var(--theme-color);
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.store-progress-current h5,
+.store-progress-current h6 {
+    color: var(--theme-color);
+    font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    .store-tracking-selector .summery-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+.store-order-success-card .checkmark__background path {
+    fill: #dff7f0;
+}
+
+.store-order-success-card .checkmark__check path {
+    fill: #0da487;
+}
+
+.store-order-success-card .checkmark .star path {
+    fill: rgba(13, 164, 135, 0.24);
+}
+.user-dashboard-section .dashboard-order .product-order-detail {
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.user-dashboard-section .dashboard-order .product-order-detail .order-image {
+    flex: 0 0 120px;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-dashboard-section .dashboard-order .product-order-detail .order-image img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 575px) {
+    .user-dashboard-section .dashboard-order .product-order-detail {
+        gap: 14px;
+    }
+
+    .user-dashboard-section .dashboard-order .product-order-detail .order-image {
+        flex-basis: 90px;
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* Category/shop card image fills the card edge to edge (card padding is a fluid calc). */
+.product-box-3 .product-header .product-image {
+    width: calc(100% + 2 * (7px + 7 * (100vw - 320px) / 1600));
+    height: 190px;
+    margin: calc(-1 * (7px + 7 * (100vw - 320px) / 1600))
+            calc(-1 * (7px + 7 * (100vw - 320px) / 1600)) 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    background-color: #f8f8f8;
+}
+
+.product-box-3 .product-header .product-image > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.product-box-3 .product-header .product-image img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    margin: 0 !important;
+    object-fit: cover !important;
+    object-position: center;
+    display: block;
+}
+
+.product-box-3 .product-footer {
+    padding-top: 18px;
+}
+
+/* Option bar is sized for 3 icons; this card has 2, so shrink it to its content. */
+.product-box-3 .product-header .product-image .product-option {
+    width: auto;
+    max-width: none;
+    justify-content: center;
+    padding: 8px 4px;
+}
+
+.product-box-3 .product-header .product-image .product-option li {
+    width: auto;
+    padding: 0 18px;
+}
+
+/* Unit sits directly under the product name, no gap. */
+.product-box-3 .product-footer .product-detail .name {
+    margin-bottom: 0;
+}
+
+.product-box-3 .product-footer .product-detail .unit {
+    margin-top: 0;
+}
+
+@media (max-width: 575px) {
+    .product-box-3 .product-header .product-image {
+        height: 150px;
+    }
+
+    .product-box-3 .product-footer {
+        padding-top: 14px;
+    }
+}
+
+
+/* Inner-page storefront topbar language/currency. */
+/* Indian flag drawn as an SVG so the Ashoka Chakra shows its spokes at small sizes. */
+.store-india-flag {
+    width: 21px;
+    height: 14px;
+    display: inline-block;
+    flex: 0 0 21px;
+    border: 1px solid rgba(0, 0, 0, .14);
+    border-radius: 2px;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 24'%3E%3Crect width='36' height='24' fill='%23ffffff'/%3E%3Crect width='36' height='8' fill='%23ff9933'/%3E%3Crect y='16' width='36' height='8' fill='%23138808'/%3E%3Cg fill='none' stroke='%23000080'%3E%3Ccircle cx='18' cy='12' r='3.3' stroke-width='0.55'/%3E%3Ccircle cx='18' cy='12' r='1.8' stroke-width='2.8' stroke-dasharray='0.14 0.3312'/%3E%3C/g%3E%3Ccircle cx='18' cy='12' r='0.55' fill='%23000080'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+/* Space between the flag and the language name, in the button and in the list. */
+.store-topbar-language .btn,
+.store-topbar-language-menu .dropdown-item > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.store-topbar-language .btn .store-india-flag,
+.store-topbar-language-menu .store-india-flag {
+    margin-right: 2px;
+}
+
+.store-topbar-language-menu {
+    min-width: 210px;
+}
+
+.store-topbar-language-menu li,
+.store-topbar-language-menu .dropdown-item {
+    width: 100%;
+}
+
+.store-topbar-language-menu .dropdown-item {
+    gap: 12px;
+}
+
+.store-topbar-language-menu .dropdown-item small {
+    color: #7a8494;
+    margin-left: 12px;
+}
+.store-topbar-language,
+.store-topbar-currency {
+    position: relative;
+}
+
+/* The header-top bar is theme-color green; the language/currency buttons
+   otherwise fall back to the browser's default dark button text. */
+.store-topbar-language .btn,
+.store-topbar-currency .btn {
+    color: #fff;
+}
+
+/* Hide only the arrow next to INR (the template draws it with ::before). */
+.store-topbar-currency .dropdown-toggle::before {
+    content: none !important;
+}
+
+.store-topbar-language .dropdown-menu,
+.store-topbar-currency .dropdown-menu {
+    top: 100% !important;
+    bottom: auto !important;
+    right: 0 !important;
+    left: auto !important;
+    transform: none !important;
+    margin-top: 8px !important;
+    z-index: 1060;
+}
+
+.store-topbar-dropdown-down {
+    display: block;
+}
+/* Make the second bank offer coupon strip blue. */
+.bank-section .slick-slide:nth-child(2) .bank-footer-2,
+.bank-section .bank-footer-2 {
+    background: linear-gradient(90deg, #0756b8 0%, #1f83ff 100%) !important;
+}
+
+.bank-section .bank-footer-2 .bank-coupon {
+    background-color: rgba(255, 255, 255, .16) !important;
+    color: #fff !important;
+}
+
+.special-offer-box {
+    background-image: none !important;
+    background-color: #f8f8f8;
+    height: 100%;
+}
+
+/* Keep homepage category cards equal height even when category names wrap. */
+.category-slider-1 .slick-track {
+    display: flex !important;
+}
+
+.category-slider-1 .slick-slide {
+    height: auto !important;
+}
+
+.category-slider-1 .slick-slide > div {
+    height: 100%;
+}
+
+.category-slider-1 .category-box-list {
+    min-height: 254px;
+    height: 254px;
+    display: flex !important;
+    flex-direction: column;
+}
+
+.category-slider-1 .category-box-list .category-name {
+    min-height: 74px;
+    display: block;
+    flex: 0 0 74px;
+}
+
+.category-slider-1 .category-box-list .category-name h4 {
+    min-height: 40px;
+    max-height: 40px;
+    line-height: 20px !important;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 4px !important;
+}
+
+.category-slider-1 .category-box-list .category-name h6 {
+    margin: 0 !important;
+    line-height: 18px !important;
+}
+
+.category-slider-1 .category-box-list .category-box-view {
+    flex: 1 1 auto;
+    min-height: 150px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-slider-1 .category-box-list .category-box-view a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-slider-1 .category-box-list .category-box-view img {
+    max-height: 135px;
+    object-fit: contain;
+}
+
+/* FAQ category cards: the template card made clickable so it filters the questions. */
+.faq-top-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.faq-top-link .faq-top-box {
+    height: 100%;
+    border: 1px solid transparent;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.faq-top-link:hover .faq-top-box,
+.faq-top-link.active .faq-top-box {
+    border-color: var(--theme-color);
+    background-color: #fff;
+}
+
+.faq-top-link.active .faq-box-contain h3 {
+    color: var(--theme-color);
+}
+
+/* LinkedIn tint for team member social links; matches the template's fb-bg / twitter-bg set. */
+.linkedin-bg {
+    color: #0a66c2;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+/* Homepage Video Section: two equal columns, either two players or a player and a text block. */
+.video-section .video-box {
+    position: relative;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-section .video-box iframe,
+.video-section .video-box video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    object-fit: cover;
+}
+
+.video-section .video-caption {
+    padding: 14px 18px;
+    background: #fff;
+    border: 1px solid #ececec;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.video-section .video-caption h4 {
+    margin: 0;
+    font-weight: 600;
+    color: #222;
+}
+
+.video-section .video-caption p {
+    margin: 6px 0 0;
+    color: #4a5568;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.video-section .video-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 10px;
+    background: #f8f8f8;
+}
+
+.video-section .video-text-box h4 {
+    margin: 0 0 6px;
+    color: var(--theme-color);
+    font-weight: 600;
+}
+
+.video-section .video-text-box h3 {
+    margin: 0 0 12px;
+    font-weight: 700;
+    color: #222;
+}
+
+.video-section .video-text-box p {
+    margin: 0;
+    color: #4a5568;
+    line-height: 1.8;
+}
+
+@media (max-width: 991px) {
+    .video-section .video-text-box {
+        padding: 22px;
+    }
+}
+
+/* Homepage-only footer (footer-home.blade.php) has a near-black background
+   (.footer-color-2{background-color:#051616}), so the logo's default dark
+   green (.bawaskar-store-logo{color:#0b5f46}) is unreadable there. The
+   interior-page footer (footer.blade.php, .footer-logo wrapper) has a light
+   background and keeps the dark green as-is. */
+.foot-logo .bawaskar-store-logo,
+.foot-logo .bawaskar-store-logo-text,
+.foot-logo .bawaskar-store-logo small {
+    color: #fff;
+}

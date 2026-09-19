@@ -1,0 +1,2 @@
+salesman_email,salesman_id,attendance_date,check_in_at,check_out_at,working_minutes,status
+salesman@example.com,1,2026-08-05,"2026-08-05 09:30:00","2026-08-05 18:30:00",540,active

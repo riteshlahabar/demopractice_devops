@@ -1,0 +1,2 @@
+salesman_email,dealer_code,salesman_id,dealer_id,visited_at,purpose,remarks
+salesman@example.com,DLR001,1,1,"2026-08-05 07:20:16","Sales Visit","Sample remarks"

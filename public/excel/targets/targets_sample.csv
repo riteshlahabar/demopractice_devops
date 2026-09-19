@@ -1,0 +1,2 @@
+salesman_email,salesman_id,period_start,period_end,target_amount,achieved_amount,commission_percent
+salesman@example.com,1,2026-08-01,2026-08-31,100000,50000,2

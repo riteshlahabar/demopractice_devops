@@ -1,0 +1,29 @@
+BAWASKAR ERP - FIRST INSTALLATION
+=================================
+
+1. Copy .env.example to .env when .env is not present.
+2. Create a MySQL database and enter its details in .env.
+3. Run: composer install
+4. Run: php artisan key:generate
+5. Run: php artisan migrate --seed
+6. Run: php artisan storage:link
+7. Run: php artisan optimize:clear
+8. Run: php artisan serve
+
+Storefront:
+http://localhost:8000/
+
+Admin:
+http://localhost:8000/admin/login
+
+Default seeded admin:
+Email: admin@turnkeyinfotech.com
+Password: 123456
+Role: admin
+
+Change the password before production deployment.
+
+Preferred mobile API base path: /api/v1
+API health check: /api/v1/health
+
+Read README.md, FASTKART_INTEGRATION.md and docs/API.md before deployment.

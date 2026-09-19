@@ -1,0 +1,2 @@
+order_type,order_no,customer_id,dealer_id,salesman_id,status,subtotal,gst_total,discount_total,grand_total,notes
+,,,1,1,active,,,,,

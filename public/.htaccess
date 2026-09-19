@@ -1,0 +1,78 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Handle X-XSRF-Token Header
+    RewriteCond %{HTTP:x-xsrf-token} .
+    RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+
+# BAWASKAR_NO_CACHE_START
+# Pages must never be cached: prices, stock and the signed-in header are in the
+# HTML. Static files are the opposite - they are content-addressed by name (an
+# upload gets a fresh random filename, the admin CSS is cache-busted by
+# filemtime), so caching them costs nothing and saves re-downloading them on
+# every single page view.
+<IfModule mod_headers.c>
+    Header always set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header always set Pragma "no-cache"
+    Header always set Expires "0"
+
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|avif|svg|ico|css|js|mp4|webm|woff|woff2|ttf|eot|otf)$">
+        Header always set Cache-Control "public, max-age=31536000, immutable"
+        Header always unset Pragma
+        Header always unset Expires
+    </FilesMatch>
+</IfModule>
+
+<IfModule LiteSpeed>
+    CacheDisable public /
+</IfModule>
+# BAWASKAR_NO_CACHE_END
+
+# Far-future expiry for the same static types, for servers that use mod_expires
+# rather than reading the header above.
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 0 seconds"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/avif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType video/mp4 "access plus 1 year"
+</IfModule>
+
+# Compress everything text-shaped. Images are already compressed formats, so
+# they are left alone.
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+    AddOutputFilterByType DEFLATE application/javascript text/javascript
+    AddOutputFilterByType DEFLATE application/json application/xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>

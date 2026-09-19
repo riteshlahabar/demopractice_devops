@@ -1,0 +1,1849 @@
+:root {
+    --theme-color: #0da487;
+    --theme-color-rgb: 13, 164, 135;
+    --secondary-color: #1f3d58
+}
+
+.page-wrapper .page-body-wrapper .page-body {
+    min-height: calc(100vh - 80px)
+}
+
+.bawaskar-brand,
+.bawaskar-sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    color: #222;
+    font-size: 19px
+}
+
+.bawaskar-sidebar-brand {
+    color: #fff
+}
+
+.brand-mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--theme-color);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900
+}
+
+.brand-mark-light {
+    background: #fff;
+    color: var(--theme-color)
+}
+
+.profile-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8f8f4;
+    color: var(--theme-color);
+    font-weight: 800
+}
+
+.dropdown-logout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 0;
+    background: transparent;
+    padding: 10px 20px;
+    color: #2b2b2b
+}
+
+.dropdown-logout:hover {
+    color: var(--theme-color)
+}
+
+.page-title {
+    padding: 25px 0 15px
+}
+
+.page-title h3 {
+    font-size: 22px
+}
+
+.card {
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .06);
+    margin-bottom: 24px
+}
+
+.card-header {
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 24px
+}
+
+.card-body {
+    padding: 22px 24px
+}
+
+.card-title {
+    font-size: 17px;
+    font-weight: 650;
+    margin: 0
+}
+
+.table {
+    color: #4a4a4a
+}
+
+.table thead th {
+    background: #f7f8fa;
+    color: #222;
+    font-weight: 650;
+    white-space: nowrap
+}
+
+.table>:not(caption)>*>* {
+    padding: .85rem .75rem;
+    vertical-align: middle
+}
+
+.btn {
+    border-radius: 7px
+}
+
+.btn-primary {
+    background: var(--theme-color);
+    border-color: var(--theme-color)
+}
+
+.btn-primary:hover {
+    background: #0b8d75;
+    border-color: #0b8d75
+}
+
+.btn-outline-primary {
+    color: var(--theme-color);
+    border-color: var(--theme-color)
+}
+
+.btn-outline-primary:hover {
+    background: var(--theme-color);
+    border-color: var(--theme-color)
+}
+
+.form-control,
+.form-select {
+    border-radius: 7px;
+    border-color: #e2e5ea;
+    min-height: 42px
+}
+
+input[type="file"].form-control {
+    padding: 0;
+    line-height: 42px;
+    overflow: hidden
+}
+
+input[type="file"].form-control::file-selector-button {
+    height: 100%;
+    margin-right: 12px;
+    padding: 0 14px;
+    border: 0;
+    border-right: 1px solid #e2e5ea;
+    background: #f7f8fa;
+    color: #4a5568
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--theme-color);
+    box-shadow: 0 0 0 .2rem rgba(var(--theme-color-rgb), .12)
+}
+
+.input-group-text {
+    background: #f7f8fa;
+    border-color: #e2e5ea
+}
+
+.badge {
+    padding: .45em .7em;
+    border-radius: 5px
+}
+
+.thumb-xl {
+    width: 58px;
+    height: 58px
+}
+
+.thumb-md {
+    width: 40px;
+    height: 40px
+}
+
+.bg-primary-subtle {
+    background: #e8f8f4 !important
+}
+
+.text-primary {
+    color: var(--theme-color) !important
+}
+
+.bg-success-subtle {
+    background: #e8f8ef !important
+}
+
+.bg-warning-subtle {
+    background: #fff7e5 !important
+}
+
+.bg-danger-subtle {
+    background: #fdeeee !important
+}
+
+.bg-info-subtle {
+    background: #e9f6fb !important
+}
+
+.pagination .page-link {
+    color: var(--theme-color)
+}
+
+.pagination .active>.page-link {
+    background: var(--theme-color);
+    border-color: var(--theme-color)
+}
+
+[class^="iconoir-"]::before,
+[class*=" iconoir-"]::before {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    content: "•"
+}
+
+.iconoir-plus::before {
+    content: "+"
+}
+
+.iconoir-edit-pencil::before,
+.iconoir-edit::before {
+    content: "✎"
+}
+
+.iconoir-trash::before {
+    content: "×"
+}
+
+.iconoir-eye::before {
+    content: "◉"
+}
+
+.iconoir-download::before {
+    content: "↓"
+}
+
+.iconoir-print::before {
+    content: "⎙"
+}
+
+.iconoir-search::before {
+    content: "⌕"
+}
+
+.iconoir-nav-arrow-right::before {
+    content: "›"
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-list .sidebar-link.active,
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-list .sidebar-submenu a.active {
+    color: var(--theme-color)
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-list .sidebar-link.active svg {
+    color: var(--theme-color)
+}
+
+.page-header .header-wrapper .nav-right>ul>li {
+    padding: 6px 10px
+}
+
+.alert {
+    border-radius: 9px
+}
+
+.table-responsive {
+    border-radius: 8px
+}
+
+.admin-actions {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap
+}
+
+.footer {
+    margin-top: 20px
+}
+
+.logo-icon-wrapper .brand-mark {
+    margin: 12px auto
+}
+
+.sidebar-main-title h6 {
+    color: #9aa5b1;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: 11px
+}
+
+@media(max-width:991px) {
+    .page-wrapper .page-body-wrapper .page-body {
+        margin-left: 0
+    }
+
+    .brand-text {
+        display: none
+    }
+}
+
+.admin-image-thumb-btn {
+    width: 54px;
+    height: 42px;
+    padding: 2px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.admin-image-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.admin-image-preview-modal .modal-body {
+    background: #f8fafc;
+}
+
+.admin-image-preview {
+    max-width: 100%;
+    max-height: 72vh;
+    object-fit: contain;
+    border-radius: 6px;
+    background: #fff;
+}
+
+/* Match Fastkart sidebar: keep sidebar icons white on the dark sidebar. */
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-link svg,
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-link i,
+.sidebar-wrapper .logo-wrapper .back-btn i,
+.sidebar-wrapper .logo-wrapper .toggle-sidebar svg,
+.sidebar-wrapper .left-arrow svg,
+.sidebar-wrapper .right-arrow svg,
+.sidebar-wrapper .sub-arrow i {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-link.active svg,
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-link:hover svg,
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-link.active i,
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-link:hover i {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+}
+
+/* Backend header language selector. */
+.admin-language-switcher .language-top-box {
+    min-width: 104px;
+    height: 38px;
+    padding: 0 12px;
+    border-radius: 7px;
+    background: #f7f8fa;
+    color: #ffffff !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.admin-language-switcher .language-top-box svg {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+}
+
+.admin-language-switcher .language-dropdown {
+    width: 100px;
+    padding: 8px;
+}
+
+.admin-language-switcher .language-dropdown li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 6px;
+    padding: 8px 10px;
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+.admin-language-switcher .language-dropdown li a small {
+    color: #7a8494;
+    font-size: 12px;
+}
+
+.admin-language-switcher .language-dropdown li a.active,
+.admin-language-switcher .language-dropdown li a:hover {
+    background: #e8f8f4;
+    color: var(--theme-color);
+}
+
+.page-wrapper .sidebar-main-title h6 {
+    color: #ffffff !important;
+}
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-main-title-compact {
+    margin: 6px 0 2px !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-main-title-compact > div {
+    margin: 0 !important;
+    padding: 0 20px 0 30px !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-main-title-compact h6 {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.2;
+}
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu a.admin-sidebar-submenu-link {
+    display: flex !important;
+    align-items: center;
+    gap: 9px;
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu a.admin-sidebar-submenu-link::before,
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu a.admin-sidebar-submenu-link::after {
+    display: none !important;
+    content: none !important;
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu .admin-sidebar-submenu-icon {
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu a.admin-sidebar-submenu-link.active .admin-sidebar-submenu-icon,
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu a.admin-sidebar-submenu-link:hover .admin-sidebar-submenu-icon {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+}
+.admin-dashboard-card-icon {
+    width: 28px;
+    height: 28px;
+    stroke-width: 2;
+}
+.admin-header-actions .nav-menus {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.page-header .header-wrapper .nav-right > ul > li.admin-header-notification,
+.page-header .header-wrapper .nav-right > ul > li.admin-profile-actions {
+    padding: 6px 0 !important;
+}
+
+.admin-profile-actions {
+    display: flex !important;
+    align-items: center;
+    gap: 18px;
+}
+
+.admin-profile-media {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 170px;
+}
+
+.admin-header-logout-form {
+    margin: 0;
+}
+
+.admin-header-logout {
+    min-height: 38px;
+    padding: 8px 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    white-space: nowrap;
+}
+
+.admin-header-logout svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* Reduce space between admin header and page heading */
+.page-wrapper.compact-wrapper .page-body-wrapper .page-body {
+    padding-top: 16px !important;
+}
+
+.page-wrapper .page-body-wrapper .page-body .container-fluid {
+    padding-top: 0 !important;
+}
+
+.page-wrapper .page-title {
+    padding-top: 12px !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 0 !important;
+}
+
+.page-wrapper .page-title .row {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Replace iconoir dot with real button icons using FontAwesome */
+[class^="iconoir-"]::before,
+[class*=" iconoir-"]::before {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    display: inline-block;
+    width: 1em;
+    text-align: center;
+}
+
+.iconoir-plus::before,
+.iconoir-plus-circle::before { content: "\f055" !important; }
+
+.iconoir-edit-pencil::before,
+.iconoir-edit::before { content: "\f044" !important; }
+
+.iconoir-trash::before { content: "\f1f8" !important; }
+
+.iconoir-eye::before { content: "\f06e" !important; }
+
+.iconoir-search::before { content: "\f002" !important; }
+
+.iconoir-check-circle::before { content: "\f058" !important; }
+
+.iconoir-xmark-circle::before { content: "\f057" !important; }
+
+.iconoir-cart::before { content: "\f07a" !important; }
+
+.iconoir-shop::before { content: "\f54e" !important; }
+
+.iconoir-box::before,
+.iconoir-box-iso::before { content: "\f466" !important; }
+
+.iconoir-receive-dollars::before,
+.iconoir-dollar-circle::before { content: "\f155" !important; }
+
+.iconoir-calendar-minus::before { content: "\f272" !important; }
+
+.iconoir-wallet::before { content: "\f555" !important; }
+
+.iconoir-view-grid::before { content: "\f00a" !important; }
+
+.iconoir-user::before { content: "\f007" !important; }
+
+.iconoir-route::before { content: "\f4d7" !important; }
+
+.iconoir-refresh::before { content: "\f021" !important; }
+
+.iconoir-receipt::before { content: "\f543" !important; }
+
+.iconoir-page::before { content: "\f15b" !important; }
+
+.iconoir-community::before { content: "\f0c0" !important; }
+
+.iconoir-download::before { content: "\f019" !important; }
+
+.iconoir-print::before { content: "\f02f" !important; }
+
+.iconoir-nav-arrow-right::before { content: "\f105" !important; }
+
+/* Five classes the mapping above had missed, so they were still rendering the
+   generic dot: Translate, Undo, Run Backup, Cancel and the calculator. */
+.iconoir-translate::before,
+.iconoir-language::before { content: "\f1ab" !important; }
+
+.iconoir-undo-action::before { content: "\f0e2" !important; }
+
+.iconoir-database-backup::before { content: "\f1c0" !important; }
+
+.iconoir-cancel::before { content: "\f00d" !important; }
+
+.iconoir-calculator::before { content: "\f1ec" !important; }
+
+/* Professional smaller table header text */
+.page-wrapper table thead th,
+.page-wrapper .table thead th,
+.page-wrapper .dataTables_wrapper table.dataTable thead th {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    letter-spacing: 0.2px !important;
+    text-transform: none !important;
+    white-space: nowrap !important;
+}
+
+/* Professional font for common search/filter section */
+.page-wrapper .card .card-body label,
+.page-wrapper .card .card-body .form-label,
+.page-wrapper .card .card-body input,
+.page-wrapper .card .card-body select,
+.page-wrapper .card .card-body textarea,
+.page-wrapper .card .card-body .form-control,
+.page-wrapper .card .card-body .form-select,
+.page-wrapper .card .card-body .btn {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 1.35 !important;
+}
+
+.page-wrapper .card .card-body .form-control,
+.page-wrapper .card .card-body .form-select {
+    height: 38px !important;
+    padding: 7px 12px !important;
+}
+
+.page-wrapper .card .card-body .btn {
+    padding: 8px 14px !important;
+    font-weight: 600 !important;
+}
+
+/* Fix select arrow overlap in search/filter section */
+.page-wrapper .card .card-body select,
+.page-wrapper .card .card-body .form-select {
+    padding-right: 36px !important;
+    background-position: right 12px center !important;
+    background-size: 14px 10px !important;
+    text-overflow: ellipsis !important;
+}
+.admin-gallery-preview-item {
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.admin-gallery-preview-item a,
+.admin-gallery-preview-thumb {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.admin-gallery-preview-thumb {
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.admin-gallery-remove-btn {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background: #dc3545;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.admin-gallery-remove-btn:hover {
+    background: #bb2d3b;
+}
+/* Improve spacing and alignment in table row action dropdown */
+.admin-row-action-toggle {
+    min-width: 34px;
+    height: 34px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-row-action-menu {
+    min-width: 190px;
+    padding: 8px;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.admin-row-action-menu .dropdown-item {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    border-radius: 8px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: left;
+}
+
+.admin-row-action-menu .dropdown-item i,
+.admin-row-action-menu .dropdown-item [class^="iconoir-"],
+.admin-row-action-menu .dropdown-item [class*=" iconoir-"] {
+    width: 16px;
+    min-width: 16px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.admin-row-action-menu .dropdown-item span {
+    flex: 1 1 auto;
+}
+
+.admin-row-action-menu .dropdown-item:hover,
+.admin-row-action-menu .dropdown-item:focus {
+    background: #f5fbf9;
+    color: var(--theme-color);
+}
+
+.admin-row-action-menu .dropdown-divider {
+    margin: 6px 0;
+}
+
+/* Read-only flag rows inside the row action dropdown (products list). */
+.admin-row-action-menu .admin-row-action-flag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6c757d;
+    white-space: nowrap;
+}
+
+.admin-row-action-menu .admin-row-action-flag .badge {
+    font-size: 11px;
+    font-weight: 600;
+}
+/* Keep one-row admin tables tall enough for action dropdowns and show row count controls. */
+.admin-table-responsive {
+    min-height: 320px;
+}
+
+.admin-table-card .dropdown-menu.show {
+    z-index: 1080;
+}
+
+.admin-table-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.admin-table-result-meta {
+    color: #6c757d;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.admin-table-per-page-form {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #6c757d;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.admin-table-per-page-form .form-select {
+    width: 92px;
+    height: 34px !important;
+    padding: 4px 30px 4px 10px !important;
+}
+
+.admin-table-links {
+    margin-left: auto;
+}
+
+.admin-table-links nav,
+.admin-table-links .pagination {
+    margin-bottom: 0;
+}
+
+/* The Fastkart theme sets .bg-light to white text on a #f4f4f4 background,
+   which makes the labels inside the variant / video repeater boxes invisible.
+   .text-muted and .text-danger keep their own colours. */
+.page-wrapper .bg-light,
+.page-wrapper .bg-light label,
+.page-wrapper .bg-light .form-label,
+.page-wrapper .bg-light .form-check-label {
+    color: #1f2937 !important;
+}
+
+/* ==========================================================================
+   Admin data table — compact, professional density.
+   Loaded after the Fastkart admin theme so these rules win the cascade.
+   ========================================================================== */
+.admin-table-card {
+    border: 1px solid #e9edf2;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+
+.admin-table-responsive {
+    border: 1px solid #eef1f5;
+    border-radius: 10px;
+}
+
+.admin-data-table {
+    font-size: 12.5px;
+    color: #344054;
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.admin-data-table > thead > tr > th {
+    background: #f8fafc;
+    color: #667085;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 11px 12px;
+    border-bottom: 1px solid #e9edf2;
+    border-top: 0;
+    vertical-align: middle;
+}
+
+.admin-data-table > tbody > tr > td {
+    padding: 10px 12px;
+    vertical-align: middle;
+    border-bottom: 1px solid #f2f4f7;
+    border-top: 0;
+    line-height: 1.4;
+}
+
+.admin-data-table > tbody > tr:last-child > td {
+    border-bottom: 0;
+}
+
+.admin-data-table.table-hover > tbody > tr:hover > td {
+    background-color: #f8fbfa;
+}
+
+.admin-data-table .badge {
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.admin-data-table .bulk-select-col {
+    width: 38px;
+    padding-left: 14px;
+    padding-right: 4px;
+}
+
+.admin-data-table .form-check-input {
+    width: 15px;
+    height: 15px;
+    margin-top: 0;
+}
+
+/* Keep the image column tight so rows stay a uniform height. */
+.admin-data-table .admin-image-thumb-btn {
+    width: 44px;
+    height: 34px;
+}
+
+.admin-row-action-toggle {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+/* --------------------------------------------------------------------------
+   Pager bar
+   -------------------------------------------------------------------------- */
+.admin-table-pagination {
+    padding: 12px 2px 2px;
+    border-top: 1px solid #eef1f5;
+    font-size: 12.5px;
+}
+
+.admin-table-result-meta,
+.admin-table-per-page-form {
+    font-size: 12.5px;
+    font-weight: 500;
+    color: #667085;
+}
+
+.admin-table-per-page-form .form-select {
+    width: 76px;
+    height: 30px !important;
+    padding: 2px 26px 2px 9px !important;
+    font-size: 12.5px;
+}
+
+.admin-pagination {
+    gap: 4px;
+}
+
+.admin-pagination .page-link {
+    min-width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #475467;
+    background: #fff;
+    border: 1px solid #e4e7ec;
+    border-radius: 7px;
+}
+
+.admin-pagination .page-link:hover {
+    color: var(--theme-color);
+    border-color: var(--theme-color);
+    background: rgba(var(--theme-color-rgb), 0.06);
+}
+
+.admin-pagination .page-item.active .page-link {
+    color: #fff;
+    background: var(--theme-color);
+    border-color: var(--theme-color);
+}
+
+.admin-pagination .page-item.disabled .page-link {
+    color: #bcc3ce;
+    background: #fff;
+    border-color: #eef1f5;
+}
+
+.admin-pagination .page-link i {
+    font-size: 10px;
+    line-height: 1;
+}
+
+/* The fixed 38px control height above is meant for single-line inputs and
+   selects, but it also hit <textarea class="form-control">, squashing every
+   admin textarea to one line and making the `rows` attribute do nothing.
+   Textareas keep their own height so `rows` decides the box size. */
+.page-wrapper .card .card-body textarea.form-control {
+    height: auto !important;
+    min-height: 96px;
+    padding: 10px 12px !important;
+    line-height: 1.5 !important;
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Tabbed admin form (modules with 'form_layout' => 'tabs')
+   ========================================================================== */
+.admin-form-tabs {
+    gap: 2px;
+    border-bottom: 1px solid #e4e7ec;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.admin-form-tabs .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 14px;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    border-radius: 8px 8px 0 0;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #667085;
+    background: transparent;
+}
+
+.admin-form-tabs .nav-link:hover {
+    color: var(--theme-color);
+    background: rgba(var(--theme-color-rgb), 0.06);
+}
+
+.admin-form-tabs .nav-link.active {
+    color: var(--theme-color);
+    background: #fff;
+    border-color: #e4e7ec;
+    border-bottom-color: #fff;
+}
+
+.admin-form-tabs .admin-form-tab-index {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #eef1f5;
+    color: #667085;
+    font-size: 10.5px;
+    font-weight: 700;
+}
+
+.admin-form-tabs .nav-link.active .admin-form-tab-index {
+    background: var(--theme-color);
+    color: #fff;
+}
+
+.admin-form-tabs .admin-form-tab-errors {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 6px;
+}
+
+/* The save bar stays reachable from every tab without scrolling to the end. */
+.admin-form-actions {
+    position: sticky;
+    bottom: 0;
+    z-index: 5;
+    padding: 12px 0 4px;
+    background: #fff;
+    border-top: 1px solid #eef1f5;
+}
+
+/* --------------------------------------------------------------------------
+   Variant accordion rows
+   -------------------------------------------------------------------------- */
+.admin-variant-head {
+    padding: 4px 0 4px 4px;
+}
+
+.admin-variant-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 10px 12px;
+    border: 0;
+    background: transparent;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: #344054;
+}
+
+.admin-variant-toggle:hover {
+    color: var(--theme-color);
+}
+
+.admin-variant-caret {
+    font-size: 10px;
+    color: #98a2b3;
+    transition: transform 0.15s ease-in-out;
+}
+
+.admin-variant-toggle.collapsed .admin-variant-caret {
+    transform: rotate(-90deg);
+}
+
+.admin-variant-summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    min-width: 0;
+}
+
+.admin-variant-summary-meta {
+    color: #667085;
+    font-weight: 500;
+}
+
+.admin-variant-summary-badge {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 7px;
+    border-radius: 6px;
+}
+
+.admin-variant-body {
+    padding: 0 14px 16px;
+}
+
+/* Dash separators between the parts of the collapsed variant summary. */
+.admin-variant-summary-meta::before,
+.admin-variant-summary-badge::before {
+    content: "\2014";
+    margin-right: 10px;
+    color: #d0d5dd;
+    font-weight: 400;
+}
+
+/* Sidebar submenus: one fixed icon box so every label starts at the same
+   point, and long labels wrap instead of being cut at the sidebar edge. */
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu .admin-sidebar-submenu-icon,
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu svg.admin-sidebar-submenu-icon {
+    width: 16px !important;
+    height: 16px !important;
+    min-width: 16px !important;
+    flex: 0 0 16px !important;
+    margin: 0 !important;
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu a.admin-sidebar-submenu-link {
+    white-space: normal !important;
+    padding-right: 12px !important;
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu a.admin-sidebar-submenu-link > span:not(.sub-arrow) {
+    flex: 1 1 auto;
+    min-width: 0;
+    white-space: normal !important;
+    line-height: 1.3;
+}
+
+/* ------------------------------------------------------------------
+   Reports: header, filter bar, Fastkart stat tiles and table.
+   Tiles reuse the template main-tiles / static-top-widget markup;
+   a tone only recolours the left bar and the icon box.
+------------------------------------------------------------------ */
+.report-page {
+    --report-primary: #0da487;
+    --report-info: #3b82f6;
+    --report-purple: #8b5cf6;
+    --report-warning: #f59e0b;
+    --report-danger: #ef4444;
+}
+
+.report-hero,
+.report-table-card {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(15, 23, 42, .06);
+}
+
+.report-page .report-hero.card,
+.report-page .report-table-card.card {
+    padding: 0;
+}
+
+.report-hero {
+    margin-bottom: 16px;
+}
+
+.report-page .report-tile.main-tiles.card .media .media-body > span.report-tile-label {
+    font-size: 13px;
+}
+
+.report-hero .card-body {
+    padding: 22px 24px;
+}
+
+.report-hero-icon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(135deg, #0da487, #0a7d68);
+    box-shadow: 0 6px 14px rgba(13, 164, 135, .28);
+}
+
+.report-hero-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: #fff;
+}
+
+.report-hero-section {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #0da487;
+    margin-bottom: 2px;
+}
+
+.report-hero-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.report-hero-text {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: #6b7280;
+    max-width: 720px;
+}
+
+.report-export,
+.report-apply,
+.report-reset {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.report-export svg,
+.report-apply svg,
+.report-reset svg {
+    width: 15px;
+    height: 15px;
+}
+
+.report-export {
+    color: #fff !important;
+}
+
+.report-export-excel {
+    background: #16a34a;
+}
+
+.report-export-excel:hover {
+    background: #15803d;
+}
+
+.report-export-pdf {
+    background: #dc2626;
+}
+
+.report-export-pdf:hover {
+    background: #b91c1c;
+}
+
+.report-reset {
+    background: #fff;
+    border: 1px solid #e2e6ea;
+    color: #4b5563;
+}
+
+.report-reset:hover {
+    background: #f3f4f6;
+    color: #111827;
+}
+
+.report-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 12px;
+    margin-top: 18px;
+    padding: 14px 16px;
+    background: #f7f9fb;
+    border: 1px solid #edf0f3;
+    border-radius: 10px;
+}
+
+.report-filter-field {
+    flex: 1 1 170px;
+    max-width: 230px;
+}
+
+.report-filter-field .form-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.report-filter-field .form-control,
+.report-filter-field .form-select {
+    height: 40px;
+    font-size: 13px;
+    border-radius: 8px;
+    border-color: #e2e6ea;
+    background-color: #fff;
+}
+
+.report-filter-actions {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.report-page .report-tile.main-tiles.card {
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(15, 23, 42, .06);
+}
+
+.report-page .report-tile .card-body {
+    padding: 20px 20px 20px 24px;
+}
+
+.report-page .report-tile .card-body:after {
+    width: 4px;
+    background-color: var(--tone);
+}
+
+.report-page .report-tile .static-top-widget {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.report-page .report-tile .static-top-widget .media-body {
+    padding-left: 0 !important;
+    min-width: 0;
+}
+
+.report-tile-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b7280;
+    margin-bottom: 6px;
+}
+
+.report-page .report-tile-value {
+    margin: 0;
+    font-size: 22px !important;
+    font-weight: 700;
+    color: #1f2937;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.report-page .report-tile-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--tone-soft) !important;
+}
+
+.report-page .report-tile-icon svg {
+    width: 22px;
+    height: 22px;
+    color: var(--tone) !important;
+    stroke: var(--tone) !important;
+}
+
+.report-tone-primary { --tone: var(--report-primary); --tone-soft: rgba(13, 164, 135, .12); }
+.report-tone-info { --tone: var(--report-info); --tone-soft: rgba(59, 130, 246, .12); }
+.report-tone-purple { --tone: var(--report-purple); --tone-soft: rgba(139, 92, 246, .12); }
+.report-tone-warning { --tone: var(--report-warning); --tone-soft: rgba(245, 158, 11, .14); }
+.report-tone-danger { --tone: var(--report-danger); --tone-soft: rgba(239, 68, 68, .12); }
+
+.report-table-card .card-header {
+    background: transparent;
+    padding: 18px 24px 12px;
+}
+
+.report-table-card .card-header-title h4 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.report-table-card .card-body {
+    padding: 0 24px 22px;
+}
+
+.report-meta {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6b7280;
+    background: #f3f4f6;
+    border-radius: 20px;
+    padding: 5px 12px;
+}
+
+.report-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #92400e;
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+}
+
+.report-note svg {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+}
+
+.report-table-wrap {
+    border: 1px solid #edf0f3;
+    border-radius: 10px;
+    max-height: 640px;
+    overflow: auto;
+}
+
+.report-table {
+    font-size: 13px;
+}
+
+.report-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #f7f9fb;
+    color: #4b5563;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    white-space: nowrap;
+    padding: 12px 14px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.report-table tbody td {
+    padding: 11px 14px;
+    color: #374151;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+.report-table tbody tr:nth-child(even) td {
+    background: #fbfcfd;
+}
+
+.report-table tbody tr:hover td {
+    background: #eefaf7;
+}
+
+.report-table tfoot td {
+    position: sticky;
+    bottom: 0;
+    background: #e8f6f2;
+    color: #065f46;
+    font-weight: 700;
+    padding: 12px 14px;
+    border-top: 2px solid #0da487;
+}
+
+.report-table .badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.report-empty {
+    text-align: center;
+    padding: 48px 16px;
+    border: 1px dashed #e2e6ea;
+    border-radius: 10px;
+}
+
+.report-empty-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f4f6;
+    color: #9ca3af;
+    margin-bottom: 10px;
+}
+
+.report-empty h5 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.report-empty p {
+    margin: 0;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.report-section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.report-section-title svg {
+    width: 18px;
+    height: 18px;
+    stroke: #0da487;
+}
+
+.report-overview-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    height: 100%;
+    padding: 16px;
+    border: 1px solid #edf0f3;
+    border-radius: 10px;
+    background: #fff;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.report-overview-link:hover {
+    border-color: var(--tone);
+    box-shadow: 0 6px 18px rgba(15, 23, 42, .08);
+    transform: translateY(-2px);
+}
+
+.report-overview-link .report-tile-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 10px;
+}
+
+.report-overview-link h6 {
+    margin: 0 0 4px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.report-overview-link small {
+    color: #6b7280;
+    line-height: 1.4;
+}
+
+@media (max-width: 767px) {
+    .report-filter-field {
+        max-width: none;
+    }
+
+    .report-filter-actions {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Admin people view page (dealers / customers / salesmen) */
+.people-avatar {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 6px 14px rgba(13, 164, 135, .22);
+}
+.people-avatar-initials {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, #0da487, #0a7d68);
+}
+.people-hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 14px;
+    margin-top: 6px;
+    font-size: 13px;
+    color: #6b7280;
+}
+.people-hero-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+.people-hero-meta svg {
+    width: 14px;
+    height: 14px;
+}
+.people-page .people-info-card.card {
+    padding: 0;
+}
+.people-info-icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13, 164, 135, .12);
+}
+.people-info-icon svg {
+    width: 16px;
+    height: 16px;
+    stroke: #0da487;
+}
+.people-info-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.people-info-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #edf0f3;
+    font-size: 13px;
+}
+.people-info-list li:last-child {
+    border-bottom: 0;
+}
+.people-info-label {
+    color: #6b7280;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.people-info-value {
+    color: #1f2937;
+    font-weight: 600;
+    text-align: right;
+    word-break: break-word;
+}
+.people-info-value a {
+    color: #0da487;
+}
+
+/* FAQ view page: question mark badge, website-style answer preview and the hint note. */
+.faq-show-mark {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13, 164, 135, 0.12);
+    color: #0da487;
+}
+.faq-show-mark svg {
+    width: 24px;
+    height: 24px;
+}
+.faq-show-preview {
+    border: 1px solid #edf0f3;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+.faq-show-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 18px;
+    background: #f8f9fb;
+    border-bottom: 1px solid #edf0f3;
+    font-weight: 600;
+    color: #1f2937;
+}
+.faq-show-question svg {
+    width: 16px;
+    height: 16px;
+    color: #6b7280;
+    flex: 0 0 16px;
+}
+.faq-show-answer {
+    padding: 18px;
+}
+.faq-show-answer p {
+    margin: 0 0 14px;
+    color: #4a5568;
+    font-size: 14px;
+    line-height: 1.75;
+}
+.faq-show-answer p:last-child {
+    margin-bottom: 0;
+}
+.faq-show-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 12px 14px;
+    border-radius: 9px;
+    background: rgba(13, 164, 135, 0.07);
+    color: #4a5568;
+    font-size: 12.5px;
+    line-height: 1.6;
+}
+.faq-show-note svg {
+    width: 15px;
+    height: 15px;
+    flex: 0 0 15px;
+    margin-top: 2px;
+    color: #0da487;
+}
+
+/* ==========================================================================
+   Sidebar rhythm and polish (2026-09-19)
+   The Fastkart template spaces a short demo menu: 12px padding plus an 8px
+   margin on every top-level row and 7px on every submenu row. This panel has
+   ten groups and about seventy leaves, so that rhythm pushes half the menu
+   below the fold. Only spacing, typography and state colours are changed here
+   — the sidebar background stays exactly as the template paints it.
+   ========================================================================== */
+
+.sidebar-wrapper .sidebar-main .sidebar-links > li > a,
+.sidebar-wrapper .sidebar-main .sidebar-links li a.sidebar-link {
+    padding: 9px 14px !important;
+    margin-top: 3px !important;
+    border-radius: 7px !important;
+    /* The template animates over half a second, which reads as lag on a menu. */
+    transition: background-color .15s ease, color .15s ease !important;
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu {
+    padding-top: 2px !important;
+    padding-bottom: 4px !important;
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu li a {
+    padding: 5px 14px 5px 26px !important;
+    font-size: 13px !important;
+    border-radius: 6px !important;
+    transition: background-color .15s ease, color .15s ease !important;
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu li .nav-sub-childmenu li a {
+    padding: 4px 14px 4px 44px !important;
+}
+
+/* One clear active row: a left accent bar instead of only a faint tint. */
+.sidebar-wrapper .sidebar-main .sidebar-links li a.sidebar-link.active {
+    background-color: rgba(255, 255, 255, .14) !important;
+    box-shadow: inset 3px 0 0 0 var(--theme-color);
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu li a.active {
+    background-color: rgba(255, 255, 255, .12) !important;
+    box-shadow: inset 3px 0 0 0 var(--theme-color);
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu li a:hover {
+    background-color: rgba(255, 255, 255, .07) !important;
+}
+
+/* Group headings: quieter and closer to the rows they introduce, with a hair
+   line so the groups read as sections rather than one long list. */
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-main-title,
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-main-title-compact {
+    margin: 10px 0 2px !important;
+    padding-top: 8px !important;
+    border-top: 1px solid rgba(255, 255, 255, .09) !important;
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links > li:first-child .sidebar-main-title,
+.sidebar-wrapper .sidebar-main .sidebar-links > li:first-child .sidebar-main-title-compact,
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-main-title:first-child,
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-main-title-compact:first-child {
+    border-top: 0 !important;
+    margin-top: 2px !important;
+    padding-top: 0 !important;
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-main-title h6 {
+    font-size: 10.5px !important;
+    letter-spacing: .1em !important;
+    opacity: .72;
+}
+
+/* The icon column is fixed so every label starts on the same x, whatever the
+   glyph. Top level slightly larger than the submenu, as a hierarchy cue. */
+.sidebar-wrapper .sidebar-main .sidebar-links li a.sidebar-link svg {
+    width: 17px !important;
+    height: 17px !important;
+    min-width: 17px !important;
+}
+
+.sidebar-wrapper .sidebar-main .sidebar-links .sidebar-submenu .admin-sidebar-submenu-icon {
+    width: 14px !important;
+    height: 14px !important;
+    min-width: 14px !important;
+    opacity: .85;
+}
+
+/* Sidebar scrollbar. Simplebar insets the thumb 2px on each side of an 11px
+   track and keeps it at opacity 0 until you are actually scrolling, so a 6px
+   track left a 2px thumb that was invisible on the dark sidebar. The track
+   stays slim but the thumb fills it and is always faintly visible, which is
+   also the only cue that the menu continues below the fold. */
+.sidebar-wrapper .sidebar-main .simplebar-track.simplebar-vertical {
+    width: 8px !important;
+}
+
+.sidebar-wrapper .sidebar-main .simplebar-scrollbar:before {
+    background: #ffffff !important;
+    left: 1px !important;
+    right: 1px !important;
+    border-radius: 4px !important;
+    opacity: .32 !important;
+}
+
+.sidebar-wrapper .sidebar-main .simplebar-scrollbar.simplebar-visible:before {
+    opacity: .6 !important;
+}

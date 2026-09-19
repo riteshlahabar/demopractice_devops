@@ -1,0 +1,2 @@
+salesman_email,salesman_id,asset_type,asset_name,serial_no,issued_on,returned_on,condition,status
+salesman@example.com,1,Mobile,"Android Phone",SN001,2026-08-05,,Good,active

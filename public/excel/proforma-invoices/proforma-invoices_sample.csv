@@ -1,0 +1,2 @@
+order_id,proforma_no,proforma_date,valid_until,subtotal,gst_total,discount_total,grand_total,status,notes
+,,,,,,,,active,

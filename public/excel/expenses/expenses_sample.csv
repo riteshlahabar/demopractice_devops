@@ -1,0 +1,2 @@
+salesman_email,salesman_id,expense_type,expense_date,amount,remarks,status
+salesman@example.com,1,Travel,2026-08-05,500,"Sample remarks",active

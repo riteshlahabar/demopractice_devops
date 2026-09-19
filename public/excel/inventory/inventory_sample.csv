@@ -1,0 +1,2 @@
+product_sku,warehouse_code,quantity,reserved_quantity,low_stock_alert
+PES001,WH001,100,0,10
